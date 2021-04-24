@@ -2,20 +2,58 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Poppin", sans-serif;
+  font-family: sans-serif;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/66be7922881ea8c3bcb1bd40ba12a797.jpg");
-  background-size: cover;
+  url("images/149890main_BetaPictDiskbMac.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   height: 100vh;
 }
-.galaxy {
-  display: flex;
-  justify-content: center;
+.container
+{
+  width: 100%;
+  height: 70%;
+  display: grid;
   align-items: center;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 0.4px;
+
+}
+.while-text
+{
+  color: black;
+  margin: 0; 
+}
+.bond
+{
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #044463;
+}
+.box{
+  position: relative;
+  max-width: 100vw;
+  padding: 30px;;
+  display: grid;
+  justify-content: center;
+  box-sizing: border-box;
+  background: rgba(255,255,255,.2);
+  box-shadow: 0 5px 15px rgba(0,0,0, .5);
+
+}
+
+.galaxy 
+{
+  display: grid;
+  justify-content: center;
+  align-self: baseline;
+  background:rgba(255,255,255,.2);
+  box-shadow: 0 5px 15px rgba(0,0,0, .5);
 }
 
 h3 {
@@ -34,20 +72,23 @@ h3::before
     width: 0%;
     height: 100%;
     color: white;
-    -webkit-text-stroke: 0.1vw transparent;
+    -webkit-text-stroke: 0vw transparent;
     border-right: 2pw solid white;
     overflow: hidden;
-    animation: animate 6s linear infinite;
-    
+    animation-name: animate;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-@keyframes animate 
+@keyframes animate
 {
-    0%, 10% ,100%
+ from 
     {
       width: 0%;
     }
-    70% , 90%
+    to 
     {
       width: 100%;
     }
 }
+
