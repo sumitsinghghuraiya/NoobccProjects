@@ -22,7 +22,7 @@ h3 {
   position: relative;
   font-size: 5vw;
   color: transparent;
-  -webkit-text-stroke: 0.1vw transparent;
+  -webkit-text-stroke: 0.1vw ;
   text-transform: uppercase;
 }
 h3::before
@@ -34,20 +34,20 @@ h3::before
     width: 0%;
     height: 100%;
     color: white;
-    -webkit-text-stroke: 0vw transparent;
-    border-right: 1pw solid white;
+    -webkit-text-stroke: 0.1vw transparent;
+    border-right: 2pw solid white;
     overflow: hidden;
-    animation: animate ease 6s linear infinite;
-
+    animation: animate 6s linear infinite;
+    
 }
 @keyframes animate 
 {
     0%, 10% ,100%
     {
-      width: 0;
+      width: 0%;
     }
-    70% ,90%
+    70% , 90%
     {
-        width: 100;
+      width: 100%;
     }
 }
