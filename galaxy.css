@@ -15,7 +15,6 @@ header {
   overflow: hidden;
   background-clip: border-box;
   -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
 
 }
 .container
